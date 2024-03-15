@@ -1,0 +1,39 @@
+package Ranjith;
+	abstract class Addition{
+		
+		abstract void add();
+		abstract void multipy();		
+		public void sub()
+		{
+			System.out.println("Subraction");
+		}
+	}
+
+   abstract class ImplementedMethod extends Addition{
+		abstract void division();
+		public void add()
+		{
+		System.out.println("Addition");
+	    }
+		public void multipy()
+		{
+			System.out.println("Multiplication");
+		}
+   }
+	
+	public class Abstractexample extends ImplementedMethod{
+		public void division() 
+		{
+			System.out.println("Division");
+		}
+		
+		public static void main(String[] args) {
+		Abstractexample obj = new Abstractexample();
+		obj.add();
+		obj.sub();
+		obj.multipy();
+		obj.division();
+	}
+   }
+
+
