@@ -1,0 +1,25 @@
+package Ranjith;
+import java.util.Scanner;
+public class OddEven {
+
+	public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter the starting value : ");
+       int a=sc.nextInt();
+       System.out.println("Enter the ending value : ");
+       int b=sc.nextInt();
+       System.out.println("Even numbers:");
+       for (int i = a; i <= b; i++) {
+           if (i % 2 == 0) {
+               System.out.println(i);
+           }
+       }
+    	System.out.println("Odd Number:");
+       for(int i = a; i <= b; i++) {
+    		if(i%2!=0) {
+    			System.out.println(i);
+    		}
+	sc.close();
+	}
+}
+}
